@@ -12,7 +12,7 @@ export default async function Header() {
             <div>
                 <Logo />
             </div>
-            <Link href={!user ? "/sign-in" : "/dashboard/profile"} className="mx-[4px] px-[15px] py-[2px] border-[#ed89fb] border-[1px] rounded-[5px] hover:bg-[#ed89fb] hover:text-[#c9d1f5]">{!user ? "Login" : "Dashboard"}</Link>
+            <Link href={!user ? "/sign-in" : "/dashboard/manage"} className="mx-[4px] px-[15px] py-[2px] border-[#ed89fb] border-[1px] rounded-[5px] hover:bg-[#ed89fb] hover:text-[#c9d1f5]">{!user ? "Login" : "Dashboard"}</Link>
         </header>
     )
 }

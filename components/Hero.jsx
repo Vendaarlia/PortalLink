@@ -14,7 +14,7 @@ export default async function Hero() {
                 <p className="text-xs max-w-sm md:max-w-md text-center mx-auto">Use this for replace your linktree, this your personal scroll portal for connecting your audience with you.</p>
             </div>
             <div className="flex items-center justify-center gap-3 mt-7">
-                <Button asChild><Link href={!user ? "/sign-in" : "/dashboard/profile"}>Get Started</Link></Button>
+                <Button asChild><Link href={!user ? "/sign-in" : "/dashboard/manage"}>Get Started</Link></Button>
                 <Button variant="outline" asChild><Link href="/vendaarlia">Demo <ArrowRight className="h-4 w-4 -rotate-45 ml-[2px]" /></Link></Button>
             </div>
             <div className="mt-20 bg-secondary p-1 rounded-lg w-fit mx-auto">

@@ -1,7 +1,10 @@
 {
-  "/user-profile/[[...user-profile]]/page": "app/user-profile/[[...user-profile]]/page.js",
-  "/page": "app/page.js",
   "/(page)/[username]/page": "app/(page)/[username]/page.js",
+  "/page": "app/page.js",
+  "/api/get/route": "app/api/get/route.js",
+  "/api/create/route": "app/api/create/route.js",
+  "/user-profile/[[...user-profile]]/page": "app/user-profile/[[...user-profile]]/page.js",
+  "/api/page/get/route": "app/api/page/get/route.js",
   "/(user)/dashboard/manage/page": "app/(user)/dashboard/manage/page.js",
   "/(user)/dashboard/profile/page": "app/(user)/dashboard/profile/page.js"
 }

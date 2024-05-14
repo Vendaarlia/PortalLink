@@ -8,7 +8,6 @@ import { LoaderIcon } from "lucide-react"
 import { useEffect, useState } from "react"
 import { useToast } from "@/components/ui/use-toast"
 import { Skeleton } from "@/components/ui/skeleton"
-import Link from "next/link"
 
 export default function ManageForm() {
     const { toast } = useToast();
@@ -20,6 +19,7 @@ export default function ManageForm() {
     const [face, setFace] = useState('');
     const [github, setGithub] = useState('');
     const [youtube, setYoutube] = useState('');
+    const [behance, setBehance] = useState('');
     const [name, setName] = useState('');
     const [loding, setLoding] = useState(true);
 
@@ -40,7 +40,7 @@ export default function ManageForm() {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ username, bio, insta, face, github, youtube, name }),
+            body: JSON.stringify({ username, bio, insta, face, github, youtube, behance, name }),
         })
             .then(res => res.json())
             .then(data => {
@@ -61,7 +61,7 @@ export default function ManageForm() {
     };
 
     useEffect(() => {
-        if (!username && !bio && !insta && !face && !github && !youtube) {
+        if (!username && !bio && !insta && !face && !github && !youtube && !behance) {
             fetch("/api/get")
                 .then(res => res.json())
                 .then(data => {
@@ -74,6 +74,7 @@ export default function ManageForm() {
                         setFace(data.data.facebook);
                         setGithub(data.data.github);
                         setYoutube(data.data.youtube);
+                        setBehance(data.data.behance)
                     }
                 });
         }
@@ -104,6 +105,9 @@ export default function ManageForm() {
                     <Label htmlFor="github" className="mt-2">Github</Label>
                     <Input value={github} onChange={(e) => setGithub(e.target.value)} disabled={isEdit} id="github" type="url" placeholder="https://github.com/username" />
 
+                    <Label htmlFor="behance" className="mt-2">Behance</Label>
+                    <Input value={behance} onChange={(e) => setBehance(e.target.value)} disabled={isEdit} id="behance" type="url" placeholder="https://behance.com/username" />
+
 
                     <div className="flex gap-2 mt-8">
                         <Button type="button" className="w-full max-w-[100px]" variant="outline" onClick={() => setIsEdit(!isEdit)}>{isEdit ? "Edit" : "Cancel"}</Button>
@@ -122,6 +126,9 @@ export default function ManageForm() {
 
                     <Skeleton className="h-5 w-20" />
                     <Skeleton className="h-20 w-full mb-8" />
+
+                    <Skeleton className="h-5 w-20 mt-2" />
+                    <Skeleton className="h-10 w-full" />
 
                     <Skeleton className="h-5 w-20 mt-2" />
                     <Skeleton className="h-10 w-full" />
