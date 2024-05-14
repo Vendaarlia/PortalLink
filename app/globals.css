@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+
+    --black: #0a0809;
+    --ijo: #c9f422;
+    --pink: #ed89fb;
+    --crem: #c9d1f5;
+  
+    --pro: "Tac One", sans-serif;
+    --sub: "Dosis", sans-serif;
+    --txt: monospace;
+  
+    --clamp-big: clamp(4.5rem, 15vw, 12rem);
+    --clamp-med: clamp(4rem, 10vw, 8rem);
+    --clamp-sub: clamp(2.7rem, 5vw, 6rem);
+    --clamp-txt: clamp(0.7rem, 1vw, 1.8rem);
+    --clamp-btn: clamp(1rem, 5vw, 2rem);
+  }
+
+  a {
+  font-size: var(--clamp-txt);
+  font-family: var(--txt);
+  color: var(--pink);
+  text-decoration: none;
+}
+
+h1, h2 {
+  margin: 0;
+  font-family: var(--pro);
+  font-size: var(--clamp-med);
+  line-height: 65%;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: var(--clamp-med);
+  font-family: var(--sub);
+  font-weight: 100;
+}
+
+p {
+  margin: 0;
+  font-size: var(--clamp-txt);
+  font-family: var(--txt);
+  color: var(--crem);
+}
+
+.wrap-marquee marquee {
+  text-align: center;
+  font-family: var(--pro);
+  font-size: var(--clamp-big);
+  line-height: 65%;
+  color: var(--ijo);
+}
+.wrap-marquee marquee span {
+  color: var(--pink);
+}
+.mark-down {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line-diver {
+  width: 80%;
+  height: 1px;
+  margin: auto;
+  background-color: var(--crem);
+}
+
+}
+
+
+.cl-navbarMobileMenuButton, .cl-navbarMobileMenuButtonIcon {
+  color: var(--pink);
+  font-family: var(--txt);
+}
+.cl-header h1 {
+  color: var(--pink);
+  font-family: var(--pro);
+  font-size: var(--clamp-med);
+}
+.cl-header p {
+  color: var(--crem);
+  font-family: var(--txt);
+}
+.cl-profileSection p {
+  color: var(--crem);
+  font-family: var(--txt);
+}
+.cl-profileSectionContent {
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.cl-profileSectionContent:hover {
+  color: var(--black);
+  background-color: var(--ijo);
+  border: 1px solid var(--ijo);
+}
+.cl-userPreviewTextContainer p {
+  color: var(--pink);
+}
+.cl-profileSectionContent:hover .cl-userPreviewTextContainer p {
+  color: var(--black);
+ }
+.cl-profileSectionPrimaryButton {
+  color: var(--pink);
+}
+.cl-profileSectionPrimaryButton:hover {
+  color: var(--black);
+}
+.cl-accordionTriggerButton {
+  color: var(--pink);
+}
+.cl-badge {
+  color: var(--black);
+  background-color: var(--pink);
+}
+
+.cl-profileSectionContent.cl-profileSectionContent__activeDevices:hover {
+  background-color: transparent;
+}
+.cl-profileSectionContent.cl-profileSectionContent__danger {
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 346.8 77.2% 49.8%;
+    --radius: 0.5rem;
+  }
+
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 95%;
+    --card: 24 9.8% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 346.8 77.2% 49.8%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+}
+*/
