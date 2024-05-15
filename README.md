@@ -2,10 +2,10 @@
 # PORTAL LINK
 This project is a web application for managing user profiles, allowing users to create, edit, and publish their profiles. It also provides a public page for each user's profile.
 
-## homepage
+## Screenshot Homepage
 ![homepage](/public/homepage.png)
 
-## demo
+## Screenshot Demo
 ![PortalLink](/public/demo.png)
 
 ## Features

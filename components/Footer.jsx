@@ -16,3 +16,5 @@ export default function Footer() {
         </footer>
     )
 }
+
+// for time being im using marquee tag for the footer but later i will use react-marquee

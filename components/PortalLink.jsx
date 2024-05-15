@@ -7,3 +7,5 @@ export default function PortalLlink() {
         </Link>
     )
 }
+
+// this is the link for the portal or home page.

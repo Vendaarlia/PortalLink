@@ -23,3 +23,5 @@ export default async function Hero() {
         </div>
     )
 }
+
+// just normal hero section noting fancy function here

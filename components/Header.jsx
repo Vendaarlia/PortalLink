@@ -17,4 +17,4 @@ export default async function Header() {
     )
 }
 
-// <Button className="p-0 m-0" asChild><Link href={!user ? "/sign-in" : "/dashboard/profile"} className="mx-[4px] py-[0] px-[15px] border-[#ed89fb] border-[1px] rounded-[5px] leading-none">{!user ? "Login" : "Dashboard"}</Link></Button>
+// this navbar with login and dashboard button functionality

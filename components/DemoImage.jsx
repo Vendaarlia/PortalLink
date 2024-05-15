@@ -10,3 +10,5 @@ export default function DemoImage() {
         </div>
     )
 }
+
+// this component for image for chaneg with theme
