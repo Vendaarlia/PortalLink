@@ -136,7 +136,12 @@ p {
   background-color: transparent;
 }
 
-
+.cl-headerTitle {
+  line-height: 70%;
+}
+.cl-avatarImageActionsUpload {
+  color: var(--ijo);
+}
 
 
 

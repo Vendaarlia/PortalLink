@@ -5,6 +5,8 @@ export default function DemoImage() {
     const { resolvedTheme, systemTheme } = useTheme();
     let currentTheme = resolvedTheme == "dark" ? '/demo.png' : '/demo.png';
     return (
-        <img className="rounded-lg" src={currentTheme} alt="demo" />
+        <div className="border border-[--pink] w-[70vw] rounded-[5px] ">
+            <img className="rounded-[5px]" src={currentTheme} alt="demo" />
+        </div>
     )
 }

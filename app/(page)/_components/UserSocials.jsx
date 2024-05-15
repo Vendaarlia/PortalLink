@@ -113,7 +113,7 @@ export default function UserSocials({ userDataName }) {
                         <Button href="/" className="mt-5 w-full max-w-sm mx-auto">Back</Button>
                     </div>
                 )}
-                <div className="mt-40 grid place-content-center text-center -mb-10">
+                <div className="mt-20 grid place-content-center text-center -mb-10">
                     <Logo />
                     <p className="text-xs">frontend <a href="https://github.com/vendaarlia">vendaarlia</a></p>
                 </div>

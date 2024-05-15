@@ -17,7 +17,7 @@ export default async function Hero() {
                 <Button asChild><Link href={!user ? "/sign-in" : "/dashboard/manage"}>Get Started</Link></Button>
                 <Button variant="outline" asChild><Link href="/vendaarlia">Demo <ArrowRight className="h-4 w-4 -rotate-45 ml-[2px]" /></Link></Button>
             </div>
-            <div className="mt-20 bg-secondary p-1 rounded-lg w-fit mx-auto">
+            <div className="mt-20 mb-20 bg-secondary p-1 rounded-lg w-fit mx-auto">
                 <DemoImage/>
             </div>
         </div>
