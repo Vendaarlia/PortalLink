@@ -2,9 +2,9 @@
 # PORTAL LINK
 This project is a web application for managing user profiles, allowing users to create, edit, and publish their profiles. It also provides a public page for each user's profile.
 
-!(homepage)[/public/homepage.png]
+![homepage](/public/homepage.png)
 
-!(PortalLink)[/public/demo.png]
+![PortalLink](/public/demo.png)
 
 ## Features
 - User profile management
@@ -23,7 +23,7 @@ This project is a web application for managing user profiles, allowing users to 
 1. Clone the repository
 2. Open the clone folder with vscode and open Terminal menu
 3. Install dependencies with type this `npm install` on terminal
-4. Set up (mongoDB)[https://www.mongodb.com] and (Clerk)[https://clerk.com]
+4. Set up [mongoDB](https://www.mongodb.com) and [Clerk](https://clerk.com)
 5. create `.env.local` and insert your keys from Clerk and mongoDB. example ini `.env.example`
 6. Run the development server with `npm run dev`
 
