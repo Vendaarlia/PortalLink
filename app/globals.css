@@ -78,10 +78,15 @@ p {
 
 }
 
+/* manage account clerk */
 
 .cl-navbarMobileMenuButton, .cl-navbarMobileMenuButtonIcon {
   color: var(--pink);
   font-family: var(--txt);
+}
+.cl-modalCloseButton {
+  outline: 2px solid var(--pink);
+  color: var(--pink);
 }
 .cl-header h1 {
   color: var(--pink);
@@ -143,6 +148,16 @@ p {
   color: var(--ijo);
 }
 
+.cl-scrollBox {
+  background-color: var(--black);
+  outline: 1px solid var(--pink);
+}
+.cl-profileSectionContent.cl-profileSectionContent__danger {
+  padding: 1rem;
+}
+.cl-internal-1qc4dsk {
+  margin: 0;
+}
 
 
 

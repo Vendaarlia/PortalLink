@@ -4,7 +4,7 @@ import Logo from "@/components/Logo";
 import { ModeToggle } from "@/components/ModeToggle";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Facebook, Github, Instagram, Share, Share2, Youtube, Behance } from "lucide-react";
+import { Facebook, Github, Instagram, Share, Share2, Youtube, Link2 } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react"
 
@@ -17,13 +17,13 @@ export default function UserSocials({ userDataName }) {
     const [face, setFace] = useState('');
     const [github, setGithub] = useState('');
     const [youtube, setYoutube] = useState('');
-    const [behance, setBehance] = useState('')
+    const [link2, setLink2] = useState('')
     const [image, setImage] = useState('');
     const [name, setName] = useState('');
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        if (!bio && !insta && !face && !github && !youtube && !behance) {
+        if (!bio && !insta && !face && !github && !youtube && !link2) {
             let username = userDataName;
             fetch("/api/page/get", {
                 method: "POST",
@@ -43,7 +43,7 @@ export default function UserSocials({ userDataName }) {
                         setFace(data.data.facebook);
                         setGithub(data.data.github);
                         setYoutube(data.data.youtube);
-                        setBehance(data.data.behance);
+                        setLink2(data.data.link2);
                     }
                     else {
                         setError(true);
@@ -101,8 +101,8 @@ export default function UserSocials({ userDataName }) {
                         {!github ? null : (
                             <Link className="transition md:w-[420px] w-[300px] mx-auto h-14 flex items-center justify-center rounded-full hover:bg-[--ijo] hover:text-black hover:scale-95 relative" target="_blank" href={github}><Github className="absolute left-6 h-5 w-5" /> My Github</Link>
                         )}
-                        {!behance ? null : (
-                            <Link className="transition md:w-[420px] w-[300px] mx-auto h-14 flex items-center justify-center rounded-full hover:bg-[--ijo] hover:text-black hover:scale-95 relative" target="_blank" href={github}><Behance className="absolute left-6 h-5 w-5" /> My Behance</Link>
+                        {!link2 ? null : (
+                            <Link className="transition md:w-[420px] w-[300px] mx-auto h-14 flex items-center justify-center rounded-full hover:bg-[--ijo] hover:text-black hover:scale-95 relative" target="_blank" href={github}><Link2 className="absolute left-6 h-5 w-5" /> My Link</Link>
                         )}
                     </div>
                 )}
